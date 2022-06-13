@@ -8,7 +8,8 @@ icecream = st.checkbox('Ice cream')
 coffee = st.checkbox('Coffee')
 cola = st.checkbox('Cola')
 
-# if we want only one selection, would use if-elif-else statement here
+# actually, I was wrong. if we use if-elif-else, the checkbox will still go through, however the printed statement
+# will be the first selected option, even if we choose the other options afterward
 if icecream:
     st.write("Great! Here's some more 🍦")
 
