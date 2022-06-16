@@ -71,7 +71,7 @@ with elements("demo"):
         # For more information regarding Card, flexbox and sx:
         # https://mui.com/components/cards/
         # https://mui.com/system/flexbox/
-        # https://mui.com/system/the-sx-prop/
+        #  https://mui.com/system/the-sx-prop/
 
         with mui.Card(key="editor", sx={"display": "flex", "flexDirection": "column"}):
             # To make this header draggable, we just need to set its classname to 'draggable',
