@@ -1,24 +1,20 @@
 # Import python packages
-# Import python packages
 import streamlit as st
-import streamlit.components.v1 as components
 
-# Inject Google Tag Manager script immediately after the <head> element
-components.html(
+# Inject Google Tag Manager script
+st.markdown(
     """
-    <head>
-        <!-- Google tag (gtag.js) -->
-        <script async src="https://www.googletagmanager.com/gtag/js?id=G-6NXDHHH86G"></script>
-        <script>
-          window.dataLayer = window.dataLayer || [];
-          function gtag(){dataLayer.push(arguments);}
-          gtag('js', new Date());
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-6NXDHHH86G"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
 
-          gtag('config', 'G-6NXDHHH86G');
-        </script>
-    </head>
+      gtag('config', 'G-6NXDHHH86G');
+    </script>
     """,
-    height=0
+    unsafe_allow_html=True
 )
 
 st.header("Hello World!")
