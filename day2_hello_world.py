@@ -1,7 +1,9 @@
 # Import python packages
+# Import python packages
 import streamlit as st
 import streamlit.components.v1 as components
 
+# Inject Google Tag Manager script immediately after the <head> element
 components.html(
     """
     <head>
